@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Forma1</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Your Details</legend>
+        <div> 
+            <ol> 
+                <li> <label for="Input_name"> Name: </label>
+                     <input type="text" placeholder="First and last name" name="InputName" id=Input_name required/><br/>
+                </li>
+                <li>
+                    <label for="Input_email">Email:</label>
+                    <input type="email" placeholder="example@domain.com" name="InputEmail" id="Input_email" required /><br/>
+                </li>
+                <li>
+                <label for="Input_phone">Phone:</label>
+                    <input type="phone" placeholder="+382 67 389 480" name="InputPhone" id="Input_phone" required/><br/>
+                </li>
+
+
+            </ol>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Delivery Address</legend>
+        <div> 
+                <ol> 
+                    <li> <label for="Input_address"> Address: </label>
+                         <textarea type="text"  name="InputAddress" id=Input_address ></textarea><br/>
+                    </li>
+                    <li>
+                        <label for="Input_postcode">Post code:</label>
+                        <input type="text"  name="InputPostcode" id="Input_postcode" /><br/>
+                    </li>
+                    <li>
+                    <label for="Input_country">Country:</label>
+                    <select id="Input_country">
+                            <option selected disabled value="Choose Country">Choose Country</option>
+                            <option value= "MNE">Montenegro</option>
+                            <option value= "CRO">Croatia</option>
+                            <option value= "SRB">Serbia</option>
+                    </select>  
+                    </li>
+                </ol>
+                    
+     </fieldset>
+     <fieldset>
+         <legend>Card Details</legend>
+         <div> 
+             <ol>
+                 <li> 
+                     <fieldset>
+                         <legend>Card Type</legend>
+                         <input type="radio" name=Visa value=Visa/> Visa <br/>
+                         <input type="radio" name=Master value=Master/> Mastercard<br/>
+                         <input type="radio" name="AmericanExpress" value="AmericanExpress"/> American Express <br/>
+
+                     </fieldset>
+                 </li>
+                 <li>
+                        <label for="Input_cardnumber"> Card Number: </label>
+                        <input type="text"  name="InputCardnumber" id=Input_cardnumber/><br/>
+
+                 </li>
+                 <li>
+                        <label for="Input_securitycode"> Security Code: </label>
+                        <input type="text"  name="InputSecurityCode" id=Input_securitycode/><br/>
+
+                 </li>
+                 <li>
+                        <label for="Input_namecard"> Name on card: </label>
+                        <input   type="text" placeholder="Exact name as on the card" name="InputNamecard" id=Input_namecard/><br/>
+                 </li>
+             </ol>
+         </div>
+     </fieldset>
+     <fieldset>
+            <input type="submit" value="Buy it"/>
+     </fieldset>
+
+</body>
+</html>
